@@ -1,0 +1,5 @@
+{{ $scope:= "markdown" }}
+{{ $prefix:= (slice .Title .Slug .File.BaseFileName }}
+{{ $body:= print "[" .Title "](" .File.Path ")" }}
+{{ $description:= .Description }}
+{{ return (dict "scope" $scope "prefix" $prefix "body" $body) }}
