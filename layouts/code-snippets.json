@@ -1,0 +1,4 @@
+{{ range .Site.RegularPages -}}
+{{ $.Scratch.SetInMap "snippets" .Title partial "partials/snippet.json" . }}
+{{- end -}}
+{{ $.Scratch.Get "snippets" | jsonify }}
