@@ -2,8 +2,7 @@
 title = "{{ .Name }}"
 date =  {{ .Date }}
 type = "issue"
-types = [ "issue", ]
-categories = [ "", ]
+categories = [ "issue", ]
 tags = [
     "",
 ]
